@@ -1,0 +1,59 @@
+.container {
+  background-color: #071e3d;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.listen-btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #23395b;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.transcript {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #23395b;
+  margin-left: 1rem;
+}
+
+.chatbot {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #23395b;
+  border-radius: 0.5rem;
+}
+
+.chat-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.user-message {
+  color: #fff;
+  background-color: #2b8eff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.bot-message {
+  color: #fff;
+  background-color: #ff6b6b;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-left: 1rem;
+}

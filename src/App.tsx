@@ -1,23 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ChatBot from './components/ChatBot';
+import VoiceRecognition from './components/VoiceRecognition';
 
-function App() {
+const App: React.FC = () =>{
+  console.log("first")
+  const handleText = (text: string) => {
+    // console.log({text});
+    return text
+    // Do something with the recognized text
+    
+  }
+ 
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
+      <VoiceRecognition onResult={handleText}/>
+       {/* <ChatBot /> */}
       </header>
     </div>
   );
