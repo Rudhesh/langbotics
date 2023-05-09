@@ -30,11 +30,11 @@ const ChatBot = (props: any) => {
     }
   };
 
-  // const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-  //   if (event.keyCode === 13) {
-  //     handleLine(props.output1);
-  //   }
-  // };
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.keyCode === 13) {
+      handleLine(event.currentTarget.value);
+    }
+  };
 
   const handleLine = (input: string) => {
     setInput(input);
@@ -49,7 +49,7 @@ const ChatBot = (props: any) => {
   return (
     <div className="container">
       <h1 className="title">Langbotics App</h1>
-      {/* <div className="input-container">
+      {props.output1 ? <div></div> : <div className="input-container">
         <p className="label">Input:</p>
         <input
           type="text"
@@ -60,7 +60,8 @@ const ChatBot = (props: any) => {
           ref={inputRef}
           onChange={(e) => setInput(e.target.value)}
         />
-      </div> */}
+      </div>}
+     
       <div className="output-container">
         <p className="label">Output:</p>
         <p className="output">{output}</p>
