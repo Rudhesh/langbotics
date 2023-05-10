@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Configuration, OpenAIApi } from 'openai';
 import './ChatBot.css';
+import TextToSpeech from './TextToSpeech';
 
 const openAi = new OpenAIApi(
   new Configuration({
@@ -47,10 +48,10 @@ const ChatBot = (props: any) => {
   }, [props.output1]);
 
   return (
-    <div className="container">
-      <h1 className="title">Langbotics App</h1>
+    <div>
+     
       {props.output1 ? <div></div> : <div className="input-container">
-        <p className="label">Input:</p>
+        {/* <p className="label">Input:</p> */}
         <input
           type="text"
           value={input}
@@ -65,7 +66,10 @@ const ChatBot = (props: any) => {
       <div className="output-container">
         <p className="label">Output:</p>
         <p className="output">{output}</p>
+       
+
       </div>
+      <TextToSpeech outputs = {output} />
     </div>
   );
 };
