@@ -1,62 +1,124 @@
-.container {
-    background-color: #071e3d;
-    color: white;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .title {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-  
-  .input-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  
-  .label {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-  }
-  
-  .input {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: #23395b;
-    color: white;
-  }
-  
-  .output-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .output {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: #23395b;
-    margin-left: 1rem;
-  }
-  
+/* ChatBot.css */
 
-  
-  .transparent-input {
-    background-color: transparent;
-    border: none; /* optional */
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: #23395b;
-    margin-left: 1rem;
-    color: white;
-  }
-  
+.transparent-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #00bcd4;
+  background-color: transparent;
+  font-size: 16px;
+  color: #00bcd4;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.transparent-input:focus {
+  outline: none;
+  border-color: #ff4081;
+  box-shadow: 0 0 0 2px #ff4081;
+}
+
+.transparent-input::placeholder {
+  color: #999999;
+}
+
+.transparent-input::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.transparent-input::-moz-placeholder {
+  color: #999999;
+}
+
+.transparent-input:-ms-input-placeholder {
+  color: #999999;
+}
+
+.transparent-input:hover {
+  border-color: #d81b60;
+}
+
+.transparent-input:hover::placeholder {
+  color: #d81b60;
+}
+
+.transparent-input:hover::-webkit-input-placeholder {
+  color: #d81b60;
+}
+
+.transparent-input:hover::-moz-placeholder {
+  color: #d81b60;
+}
+
+.transparent-input:hover:-ms-input-placeholder {
+  color: #d81b60;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.label {
+  color: #00bcd4;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 2px solid #00bcd4;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #00bcd4;
+  resize: vertical;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-textarea:focus {
+  outline: none;
+  border-color: #ff4081;
+  box-shadow: 0 0 0 2px #ff4081;
+}
+
+.input-textarea::placeholder {
+  color: #999999;
+}
+
+.input-textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.input-textarea::-moz-placeholder {
+  color: #999999;
+}
+
+.input-textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+.input-textarea:hover {
+  border-color: #d81b60;
+}
+
+.input-textarea:hover::placeholder {
+  color: #d81b60;
+}
+
+.input-textarea:hover::-webkit-input-placeholder {
+  color: #d81b60;
+}
+
+.input-textarea:hover::-moz-placeholder {
+  color: #d81b60;
+}
+
+.input-textarea:hover:-ms-input-placeholder {
+  color: #d81b60;
+}
+
+/* Add more styling as needed */

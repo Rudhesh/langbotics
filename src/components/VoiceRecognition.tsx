@@ -45,14 +45,16 @@ const VoiceRecognition: React.FC<VoiceRecognitionProps> = ({ onResult }) => {
 
   return (
     <div className="container">
-      <ChatBot output1={output1} />
+     
       <button className="listen-btn" onClick={handleListen}>
         {isListening ? "Stop Listening" : "Start Listening"}
       </button>
       <div className="input-container">
         <p className="label">Input:</p>
         <p className="transcript">{transcript}</p>
+
       </div>
+      <ChatBot output1={output1} />
     </div>
   );
 }
