@@ -16,7 +16,8 @@ const ErrorChecker: React.FC<ErrorCheckerProps> = (props) => {
 
   useEffect(() => {
     if (input.trim() !== '') {
-      const textgearsApi = textgears('QES5wjQmL2eYtoGF', { language: 'en-US', ai: false });
+
+      const textgearsApi = textgears(process.env.REACT_APP_TEXT_GEARS_API, { language: 'en-US', ai: false });
       textgearsApi
         .checkGrammar(input)
         .then((data) => {
@@ -25,6 +26,9 @@ const ErrorChecker: React.FC<ErrorCheckerProps> = (props) => {
         })
         .catch((err: Error) => {
           // Handle error
+          console.log(error);
+          setResponse({ errors: [{ bad: err.message, better: [] }] });
+
         });
     }
   }, [input]);

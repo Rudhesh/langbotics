@@ -56,7 +56,7 @@ const VoiceRecognition: React.FC<VoiceRecognitionProps> = ({ onResult }) => {
 
       </div>
       <ChatBot output1={output1} />
-      <ErrorChecker output1={output1}  />
+      {/* <ErrorChecker output1={output1}  /> */}
     </div>
   );
 }
