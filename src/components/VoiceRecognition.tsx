@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import ChatBot from './ChatBot';
 import "./VoiceRecognition.css"
+import ErrorChecker from './ErrorChecker';
 
 interface VoiceRecognitionProps {
   onResult: (text: string) => void;
@@ -55,6 +56,7 @@ const VoiceRecognition: React.FC<VoiceRecognitionProps> = ({ onResult }) => {
 
       </div>
       <ChatBot output1={output1} />
+      {/* <ErrorChecker output1={output1}  /> */}
     </div>
   );
 }
