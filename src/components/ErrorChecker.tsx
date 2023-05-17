@@ -34,7 +34,7 @@ const ErrorChecker: React.FC<ErrorCheckerProps> = (props) => {
   }, [input]);
 
   if (!response) {
-    return <div>Loading...</div>;
+    return <p >Use me to check the Grammar</p>;
   }
 const error = response.errors
   return (
