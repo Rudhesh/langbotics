@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Configuration, OpenAIApi } from 'openai';
 import './ChatBot.css';
 import TextToSpeech from './TextToSpeech';
+import ErrorChecker from './ErrorChecker';
 
 const openAi = new OpenAIApi(
   new Configuration({
@@ -69,6 +70,8 @@ const ChatBot = (props: any) => {
        
 
       </div>
+      <ErrorChecker output1={input} />
+
       <TextToSpeech outputs = {output} />
     </div>
   );

@@ -1,0 +1,41 @@
+.corrections-container {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.error-container {
+  margin-bottom: 10px;
+}
+
+.error-text {
+  color: #ff0000;
+  font-weight: bold;
+  margin: 0;
+}
+
+.suggestions-text {
+  color: #666666;
+  margin: 0;
+  font-weight: bold;
+}
+
+.user-text {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.error-word {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.corrections-text {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}

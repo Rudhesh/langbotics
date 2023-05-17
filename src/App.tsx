@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import VoiceRecognition from './components/VoiceRecognition';
+import YourComponent from './components/ErrorChecker';
 
 const App: React.FC = () =>{
   const handleText = (text: string) => {
@@ -18,7 +19,6 @@ const App: React.FC = () =>{
 
       <h1 className="title">Langbotics App</h1>
       <div><VoiceRecognition onResult={handleText}/></div>
-    
 
       </header>
     </div>
