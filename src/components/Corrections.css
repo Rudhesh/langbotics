@@ -1,41 +1,59 @@
+/* Sidebar */
 .corrections-container {
-  background-color: #f1f1f1;
-  border-radius: 8px;
+  /* width: 300px; */
+  /* background-color: #f1f1f1; */
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+/* Chat container */
+.corrections-chat-container {
+  width: calc(100% - 300px);
+ 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Chat messages */
+.corrections-chat-messages {
+  height: 400px;
+  overflow-y: auto;
+  background-color: #fff;
   padding: 10px;
+  border: 1px solid #ccc;
 }
 
-.error-container {
-  margin-bottom: 10px;
-}
-
-.error-text {
-  color: #ff0000;
-  font-weight: bold;
-  margin: 0;
-}
-
-.suggestions-text {
-  color: #666666;
-  margin: 0;
-  font-weight: bold;
-}
-
+/* User message */
 .user-text {
-  background-color: #ffffff;
-  border-radius: 8px;
+  background-color: #dcf8c6;
   padding: 10px;
   margin-bottom: 10px;
-  font-weight: bold;
 }
 
+/* Error container */
+.error-container {
+  background-color: #eaf6ff;
+  padding: 10px;
+  margin-bottom:10px  ;
+  width: 100%;
+}
+
+/* Error text */
+.error-text {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Suggestions text */
+.suggestions-text {
+  margin-bottom: 5px;
+}
+
+/* Highlighted text */
 .error-word {
-  color: #ff0000;
-  font-weight: bold;
-}
-
-.corrections-text {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 10px;
+  background-color: #ff4081;
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 2px;
 }
