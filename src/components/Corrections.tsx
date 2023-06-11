@@ -11,14 +11,24 @@ const Corrections: React.FC<CorrectionsProps> = (props) => {
 
   const applyCorrections = () => {
     let correctedText = texts;
-
+  
     corrections.forEach((error) => {
-      const regex = new RegExp(`\\b${error.bad}\\b`, 'gi');
-      correctedText = correctedText.replace(regex, `<span class="error-word">${error.bad}</span>`);
+      const badWord = error.bad;
+      const words = correctedText.split(' ');
+  
+      const correctedWords = words.map((word) => {
+        if (word.toLowerCase() === badWord.toLowerCase()) {
+          return `<span class="error-word">${word}</span>`;
+        }
+        return word;
+      });
+  
+      correctedText = correctedWords.join(' ');
     });
-
+  
     return correctedText;
   };
+  
 
   const renderHighlightedText = () => {
     const correctedText = applyCorrections();
